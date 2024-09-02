@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রক্তের গ্রুপ পরীক্ষা</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="initializeBloodGroup()">
+    <header class="bg-danger text-white text-center py-3">
+        <h1>রক্তের গ্রুপ পরীক্ষা</h1>
+    </header>
+    
+    <div class="container my-4">
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <center><label for="reagentA"><img src="Anti-A.png" width="200px" height="150px"></label></center>
+                        <select id="reagentA" class="form-control">
+                            <option value="normal">স্বাভাবিক রক্ত</option>
+                            <option value="egluation">অধঃক্ষেপিত রক্ত</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                       <center><label for="reagentB"><img src="Anti-B.png" width="200px" height="150px"></label></center>
+                        <select id="reagentB" class="form-control">
+                            <option value="normal">স্বাভাবিক রক্ত</option>
+                            <option value="egluation">অধঃক্ষেপিত রক্ত</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <center><label for="reagentD"><img src="Anti-D.png" width="200px" height="150px"></label></center>
+                        <select id="reagentD" class="form-control">
+                            <option value="normal">স্বাভাবিক রক্ত</option>
+                            <option value="egluation">অধঃক্ষেপিত রক্ত</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mb-4">
+            <button class="btn btn-danger" onclick="updateBloodGroup()">রক্তের গ্রুপ পরীক্ষা করুন</button>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div id="bloodGroupResult" class="blood-group-result"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-danger text-white text-center py-2">
+        <p>&copy; ডেভেলপার মোঃ আনিছুর রহমান</p>
+    </footer>
+
+    <script src="blood.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #dc3545;
+    color: white;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+.container {
+    flex: 1; /* Allows the container to expand and push the footer down */
+    padding: 20px;
+}
+
+.blood-group-result {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.red-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #dc3545;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.form-row .form-control {
+    font-size: 1rem;
+}
+
+@media (max-width: 767.98px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .blood-group-result {
+        font-size: 1.5rem;
+    }
+
+    .red-circle {
+        width: 100px;
+        height: 100px;
+        font-size: 1.25rem;
+    }
+
+    .form-row .form-control {
+        font-size: 0.875rem;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
